@@ -3,5 +3,16 @@ par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget bib
 counts = {}
 #your code go here:
 
-print(counts)
+def count_char(letra):
+    letra = letra.lower()
+    for i in letra:
+        keys = counts.keys()
+        if i != " ":
+            if i in keys:
+                counts[i] += 1
+            else:
+                counts[i] = 1
+    return counts
+
+print(count_char(par))
 

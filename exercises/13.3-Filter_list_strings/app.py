@@ -7,3 +7,9 @@ names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','Logan
 
 
 #Your code go here:
+def string_am(items):
+    return 'am' in items
+
+listams = list(filter(string_am, names))
+
+print(listams)
